@@ -181,3 +181,5 @@ Este proyecto es una **aplicación web de reservas de autocaravanas** desarrolla
 
 ---
 
+- Paco en el fichero .env no te muestro la Stripe_Key y la Stripe_Secret por motivos de seguridad de GitHub (no me dejaba subir el fichero)
+
