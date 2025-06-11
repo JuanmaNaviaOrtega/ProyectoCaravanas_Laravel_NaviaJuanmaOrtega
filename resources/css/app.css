@@ -1,0 +1,154 @@
+/* resources/css/app.css */
+
+/* 1. Importaciones base */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* 2. Fuentes personalizadas */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
+
+/* 3. Componentes personalizados */
+.btn {
+    @apply px-4 py-2 rounded-md font-medium transition-colors duration-200;
+}
+
+.btn-primary {
+    @apply bg-indigo-600 text-white hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2;
+}
+
+.btn-secondary {
+    @apply bg-gray-100 text-gray-800 hover:bg-gray-200 border border-gray-300 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2;
+}
+
+.btn-danger {
+    @apply bg-red-600 text-white hover:bg-red-700 focus:ring-2 focus:ring-red-500 focus:ring-offset-2;
+}
+
+.badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.badge-success {
+    @apply bg-green-100 text-green-800;
+}
+
+.badge-danger {
+    @apply bg-red-100 text-red-800;
+}
+
+.badge-info {
+    @apply bg-blue-100 text-blue-800;
+}
+
+.badge-warning {
+    @apply bg-yellow-100 text-yellow-800;
+}
+
+/* 4. Estilos para tablas */
+.table-responsive {
+    @apply overflow-x-auto shadow ring-1 ring-black ring-opacity-5 rounded-lg;
+}
+
+.table {
+    @apply min-w-full divide-y divide-gray-200;
+}
+
+.table thead {
+    @apply bg-gray-50;
+}
+
+.table th {
+    @apply px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider;
+}
+
+.table td {
+    @apply px-6 py-4 whitespace-nowrap text-sm text-gray-900;
+}
+
+.table tr:nth-child(even) {
+    @apply bg-gray-50;
+}
+
+.table tr:hover {
+    @apply bg-gray-100;
+}
+
+/* 5. Estilos específicos para el admin */
+.admin-sidebar {
+    @apply w-64 bg-gray-800 text-white fixed h-full;
+}
+
+.admin-content {
+    @apply ml-64 flex-1 p-8;
+}
+
+/* 6. Estilos para formularios */
+.form-group {
+    @apply mb-4;
+}
+
+.form-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+}
+
+.form-input {
+    @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500;
+}
+
+.form-select {
+    @apply mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md;
+}
+
+.form-checkbox {
+    @apply h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded;
+}
+
+/* 7. Animaciones */
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.3s;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+/* 8. Overrides y correcciones */
+[x-cloak] { display: none !important; }
+
+/* 9. Estilos para paginación */
+.pagination {
+    @apply flex items-center justify-between;
+}
+
+.pagination-info {
+    @apply text-sm text-gray-700;
+}
+
+.pagination-links {
+    @apply flex space-x-2;
+}
+
+.page-link {
+    @apply px-3 py-1 rounded-md border border-gray-300 text-sm font-medium;
+}
+
+.page-link.active {
+    @apply bg-indigo-600 text-white border-indigo-600;
+}
+
+/* 10. Estilos para alertas */
+.alert {
+    @apply p-4 mb-4 rounded-lg;
+}
+
+.alert-success {
+    @apply bg-green-100 text-green-800;
+}
+
+.alert-danger {
+    @apply bg-red-100 text-red-800;
+}
+
+.alert-info {
+    @apply bg-blue-100 text-blue-800;
+}
